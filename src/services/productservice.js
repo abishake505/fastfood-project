@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = "http://localhost:5000/api/products"; // change this if hosted
+const API = "https://project-f-2cqg.onrender.com/api/products"; // change this if hosted
 
 export const fetchProducts = () => axios.get(API);
 export const addProduct = (data) => axios.post(API, data, getAuthHeader());

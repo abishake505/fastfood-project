@@ -15,7 +15,7 @@ const LoginPage = () => {
     e.preventDefault();
     setMsg('');
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', form);
+      const res = await axios.post('https://project-f-2cqg.onrender.com/api/auth/login', form);
       const { token, role } = res.data;
 
       localStorage.setItem("token", token);
