@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 
 const LoginPage = () => {
-  const [form, setForm] = useState({ email: '', password: '' });
+  const [form, setForm] = useState({ email: 'abi262952@gmail.com', password: '123456' });
   const [msg, setMsg] = useState('');
   const navigate = useNavigate();
 
